@@ -36,6 +36,41 @@ body {
 }
 
 .icon {
-    margin-right: 10px;
-    cursor: pointer;
-}
+    font-size: 24px; /* 例として24pxを指定 */
+    vertical-align: middle; /* 縦方向の中央揃え */
+  }
+  
+  .instagram-icon {
+    display: inline-block;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    width: 24px; /* 他のアイコンと同じサイズに */
+    height: 24px; /* 他のアイコンと同じサイズに */
+    border-radius: 6px; /* サイズに応じてボーダーラジウスも調整 */
+    position: relative;
+    vertical-align: middle; /* 縦方向の中央揃え */
+  }
+  
+  .instagram-icon:before {
+    content: "";
+    display: block;
+    background: white;
+    width: 16px; /* アイコンのサイズに応じて調整 */
+    height: 16px; /* アイコンのサイズに応じて調整 */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .instagram-icon:after {
+    content: "";
+    display: block;
+    background: white;
+    width: 4px; /* アイコンのサイズに応じて調整 */
+    height: 4px; /* アイコンのサイズに応じて調整 */
+    border-radius: 50%;
+    position: absolute;
+    top: 15%; /* アイコンのサイズに応じて調整 */
+    right: 15%; /* アイコンのサイズに応じて調整 */
+  }
